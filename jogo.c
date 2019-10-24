@@ -27,7 +27,7 @@ void menu ()
     switch (escolha)
     {
     case 1:
-        fase1;
+       // fase1;
         break;
     case 2:
         printf("2");
