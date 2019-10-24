@@ -1,15 +1,55 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-
+//-------------------------VARIAVEIS DO AMBIENTE - COMEÇO
 int escolha;
+//-------------------------VARIAVEIS DO AMBIENTE - FIM
 
+//-------------------------"TRADUZIR O CODIGO PODER USAR Ç ~ ´ ` E ETC E LIMPAR A TELA" - COMEÇO
 void traducaoelimpeza ()
 {
     system("clear");
     setlocale(LC_ALL, "portuguese");
 }
+//-------------------------"TRADUZIR O CODIGO PODER USAR Ç ~ ´ ` E ETC E LIMPAR A TELA" - FIM
 
+//-------------------------MENU NO CASO DE ERRO DO USER - COMEÇO
+void menu2 ()
+{
+    traducaoelimpeza();
+    printf("\n----------------------------------------------------------------------\n");
+    printf("\n                          SEJA BEM VINDO AO");
+    printf("\n                          CALABOUÇO DA MORTE");
+    printf("\n           Aventuras Fantásticas – Vol 5 – Ian Livingstone");
+    printf("\n                    Adaptação: Thiago Rodrigues");
+    printf("\n\n                        ESCOLHA UMA OPÇÃO");
+    printf("\n                               1º JOGAR");
+    printf("\n                               2º AJUDA");
+    printf("\n                               3º SAIR");
+    printf("\n\n----------------------------------------------------------------------");
+    printf("\n                            Opção Inválida\n");
+    printf("                      Escolha uma opção valida\n\n");
+    scanf("%d",&escolha);
+    switch (escolha)
+    {
+    case 1:
+        historia();
+        break;
+    case 2:
+        printf("2");
+        break;
+    case 3:
+        system("exit");
+        break;
+
+    default:
+    menu2();
+        break;
+    }
+}
+//-------------------------MENU NO CASO DE ERRO DO USER - FIM
+
+//-------------------------MENU PRINCIPAL - COMEÇO
 void menu ()
 {
     traducaoelimpeza();
@@ -37,11 +77,13 @@ void menu ()
         break;
 
     default:
-    printf("\n                           Opção Inválida\n\n");
-        break;
+    menu2();
+    break;
     }
 }
+//-------------------------MENU PRINCIPAL - FIM
 
+//-------------------------HISTORIA INTRODUTORIA - COMEÇO
 void historia () 
 {
     traducaoelimpeza();
@@ -59,7 +101,7 @@ void historia ()
     printf("  O cavaleiro é o primeiro. Ele saúda a multidão antes de desaparecer no\n  túnel; meia hora depois é seguido pela mulher-elfo. Em seguida, vai um\n  dos bárbaros; depois, o assassino negro. Agora é a sua vez de saudar a\n  multidão. Segurando o lenço roxo bem alto, você enche os pulmões de ar\n  fresco e puro uma última vez antes de se virar para passar entre os\n  pilares de pedra e penetrar no labirinto do poderoso Barão Sukumvit, a\n  fim de enfrentar perigos desconhecidos na ""Caminhada"" pelo Calabouço\n  da Morte. \n\n");
     printf("                     BOA SORTE QUE O JOGO COMECE\n\n");
     printf(" Digite qualquer número para começar o jogo depois pressione enter!");
-    scanf("%d",escolha);
+    scanf("%d",&escolha);
     switch (escolha)
     {
     case 1:
@@ -72,8 +114,10 @@ void historia ()
     }
     printf("\n\n ----------------------------------------------------------------------\n\n");
 }
-
+//-------------------------HISTORIA INTRODUTORIA - FIM
+//-------------------------MAIN - COMEÇO
 void main ()
 {
     menu();
 }
+//-------------------------MAIN - FIM
