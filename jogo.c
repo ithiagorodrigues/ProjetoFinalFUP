@@ -110,7 +110,7 @@ void historia() {
 //-------------------------HISTORIA INTRODUTORIA - FIM
 
 //-------------------------FASES DO JOGO - ESCOLHAS - COMEÇO
-void escolha1(){
+void escolha1() {
   traducaoelimpeza();
   printf("\n\n ----------------------------------------------------------------------\n\n");
   printf("  O clamor dos espectadores excitados some gradualmente atrás de você,\n  que se aventura cada vez mais fundo na penumbra do túnel da caverna.");
@@ -120,9 +120,8 @@ void escolha1(){
   printf("\n                           1º Abrir a caixa");
   printf("\n                 2º Continuar caminhando para o norte");
   printf("\n\n ----------------------------------------------------------------------\n\n");
-  scanf("%d",&escolha);
-  switch (escolha)
-  {
+  scanf("%d", & escolha);
+  switch (escolha) {
   case 1:
     escolha270();
     break;
@@ -132,7 +131,7 @@ void escolha1(){
     break;
 
   default:
-  escolha1();
+    escolha1();
     break;
   }
 
@@ -151,10 +150,10 @@ void escolha66() {
   scanf("%d", & escolha);
   switch (escolha) {
   case 1:
-    //escolha293();
+    escolha293();
     break;
   case 2:
-    //escolha119();
+    escolha119();
     break;
   default:
     escolha66;
@@ -162,7 +161,32 @@ void escolha66() {
   }
 }
 
-void escolha270(){
+void escolha119() {
+  traducaoelimpeza();
+  printf("\n\n ----------------------------------------------------------------------\n\n");
+  printf("                          (Você foi para o leste)\n\n");
+  printf("  Adiante, você pode ver um grande obstáculo no chão do túnel, embora\n  esteja escuro demais para saber exatamente o que é. As pegadas\n  molhadas que você vem seguindo continuam até a obstrução.");
+  printf("\n\n ----------------------------------------------------------------------\n");
+  printf("                          ESCOLHA UMA OPÇÃO");
+  printf("\n                      1º Continuar indo para o leste");
+  printf("\n             2º Ir para a encruzilhada e seguir para o oeste");
+  printf("\n ----------------------------------------------------------------------\n\n");
+  scanf("%d", & escolha);
+  switch (escolha) {
+  case 1:
+    //escolha56());
+    break;
+  case 2:
+    escolha293();
+    break;
+  default:
+    escolha119;
+    break;
+  }
+
+}
+
+void escolha270() {
   traducaoelimpeza();
   printf("\n\n -----------------------------------------------------------------------\n\n");
   printf("                           (Você abriu a caixa)\n\n");
@@ -180,6 +204,32 @@ void escolha270(){
     escolha66();
     break;
   }
+}
+
+void escolha293() {
+  traducaoelimpeza();
+  printf("\n\n -----------------------------------------------------------------------\n\n");
+  printf("                           (Você chegou na encruzilhada)\n\n");
+  printf("  Seguindo os três pares de pegadas molhadas pela passagem oeste do\n  túnel, você logo chega a uma encruzilhada.");
+  printf("\n\n -----------------------------------------------------------------------\n");
+  printf("                          ESCOLHA UMA OPÇÃO");
+  printf("\n        1º Continuar para o oeste, seguindo dois pares de pegadas");
+  printf("\n      2º Se dirigir para o norte, seguindo o terceiro par de pegadas");
+  printf("\n -----------------------------------------------------------------------\n\n");
+  scanf("%d", & escolha);
+  switch (escolha) {
+  case 1:
+    //escolha137();
+    break;
+  case 2:
+    //escolha387();
+    break;
+
+  default:
+    escolha293();
+    break;
+  }
+
 }
 
 //-------------------------FASES DO JOGO - ESCOLHAS - FIM
