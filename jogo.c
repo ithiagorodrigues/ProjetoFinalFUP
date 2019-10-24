@@ -1,9 +1,7 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <locale.h>
- //-------------------------VARIAVEIS DO AMBIENTE - COMEÇO
+//-------------------------VARIAVEIS DO AMBIENTE - COMEÇO
 int escolha;
 //-------------------------VARIAVEIS DO AMBIENTE - FIM
 
