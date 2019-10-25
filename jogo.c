@@ -88,6 +88,7 @@ void historia() {
   printf("  Uma mulher-elfo esguia, de cabelos dourados e olhos verdes de felino,\n  ajusta o cinturão de través, cheio de punhais, que lhe envolve a\n  túnica de couro. Dos outros dois homens restantes, um está coberto da\n  cabeça aos pés por uma armadura de chapas de ferro com um elmo\n  emplumado e um escudo que exibe um timbre; o outro está envolto em\n  vestes negras, somente seus olhos escuros aparecendo em meio aos panos\n  pretos que lhe envolvem o rosto. Facas longas, um garrote de fio de\n  aço e outras armas mortais silenciosas pendem-lhe do cinto. Os cinco\n  concorrentes demonstram ter notado sua chegada com movimentos\n  quase imperceptíveis de cabeça, e você se volta para olhar de frente,\n  pela última vez, a multidão exultante. Subitamente, um silêncio cai\n  sobre a multidão, quando o Barão Sukumvit dá um passo adiante,\n  segurando seis varas de bambu. Você tira uma delas da mão estendida e\n  lê a palavra ""Quinto"". Então, a Prova começa. \n\n");
   printf("  O cavaleiro é o primeiro. Ele saúda a multidão antes de desaparecer no\n  túnel; meia hora depois é seguido pela mulher-elfo. Em seguida, vai um\n  dos bárbaros; depois, o assassino negro. Agora é a sua vez de saudar a\n  multidão. Segurando o lenço roxo bem alto, você enche os pulmões de ar\n  fresco e puro uma última vez antes de se virar para passar entre os\n  pilares de pedra e penetrar no labirinto do poderoso Barão Sukumvit, a\n  fim de enfrentar perigos desconhecidos na ""Caminhada"" pelo Calabouço\n  da Morte. \n\n");
   printf("                     BOA SORTE QUE O JOGO COMECE\n\n");
+  hablidade_energia_sorte();
   printf(" Digite qualquer número para começar o jogo, depois pressione enter!\n");
   scanf("%d", & escolha);
   switch (escolha) {
@@ -357,6 +358,5 @@ void escolha373() {
 //-------------------------MAIN - COMEÇO
 void main() {
   menu();
-  hablidade_energia_sorte();
 }
 //-------------------------MAIN - FIM
