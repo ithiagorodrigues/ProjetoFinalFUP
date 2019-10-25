@@ -13,6 +13,28 @@
     }
     //-------------------------"TRADUZIR O CODIGO PODER USAR Ç ~ ´ ` E ETC E LIMPAR A TELA" - FIM
 
+    //-------------------------TELA FIM DE JOGO - COMEÇO
+    void fimdejogo(){
+    traducaoelimpeza();
+    printf("\n  ╭━─━─━──━─━──━─━──━─━──━─━──━─━──━─━─≪  ✠ ≫─━─━──━─━──━─━──━─━──━─━──━─━─━╮\n\n");
+    printf("                                   GAMER OVER\n");
+    printf("                              O CALABOUÇO DA MORTE");
+    printf("\n                Aventuras Fantásticas – Vol 5 – Ian Livingstone");
+    printf("\n                          Adaptação: Thiago Rodrigues");
+    printf("\n         Clique qualquer número e pressione enter para voltar ao menu\n\n");
+    printf("\n  ╰━─━─━──━─━──━─━──━─━──━─━──━─━──━─━─≪  ✠ ≫─━─━──━─━──━─━──━─━──━─━──━─━─━╯\n\n");
+    scanf("%d", & escolha);
+      switch (escolha) {
+      case 1:
+        menu();
+        break;
+      default:
+        menu();
+        break;
+      }
+    }
+    //-------------------------TELA FIM DE JOGO - FIM
+
     //-------------------------DADO - COMEÇO
 
     void dado() {
@@ -51,16 +73,16 @@
     //-------------------------MENU PRINCIPAL - COMEÇO
     void menu() {
       traducaoelimpeza();
-      printf("\n----------------------------------------------------------------------\n");
-      printf("\n                          SEJA BEM VINDO AO");
-      printf("\n                          CALABOUÇO DA MORTE");
-      printf("\n           Aventuras Fantásticas – Vol 5 – Ian Livingstone");
-      printf("\n                    Adaptação: Thiago Rodrigues");
-      printf("\n\n                        ESCOLHA UMA OPÇÃO");
-      printf("\n                               1º JOGAR");
-      printf("\n                               2º AJUDA");
-      printf("\n                               3º SAIR");
-      printf("\n\n----------------------------------------------------------------------\n\n");
+      printf("\n  ╭━─━─━──━─━──━─━──━─━──━─━──━─━──━─━─≪✠≫─━─━──━─━──━─━──━─━──━─━──━─━─━╮\n");
+      printf("\n                                SEJA BEM VINDO AO");
+      printf("\n                                CALABOUÇO DA MORTE");
+      printf("\n               Aventuras Fantásticas – Vol 5 – Ian Livingstone");
+      printf("\n                            Adaptação: Thiago Rodrigues");
+      printf("\n\n                               ESCOLHA UMA OPÇÃO");
+      printf("\n                                    1º JOGAR");
+      printf("\n                                    2º AJUDA");
+      printf("\n                                    3º SAIR\n");
+      printf("\n  ╰━─━─━──━─━──━─━──━─━──━─━──━─━──━─━─≪✠≫─━─━──━─━──━─━──━─━──━─━──━─━─━╯\n\n");
       scanf("%d", & escolha);
       switch (escolha) {
       case 1:
@@ -113,287 +135,335 @@
     //-------------------------HISTORIA INTRODUTORIA - FIM
 
     //-------------------------FASES DO JOGO - ESCOLHAS - COMEÇO
-void escolha1() {
-  traducaoelimpeza();
-  printf("\n\n ----------------------------------------------------------------------\n\n");
-  printf("  O clamor dos espectadores excitados some gradualmente atrás de você,\n  que se aventura cada vez mais fundo na penumbra do túnel da caverna.");
-  printf("\n\n  Grandes cristais pendem do teto do túnel a intervalos de 20 metros,\n  irradiando uma luz suave, apenas suficiente para que se veja por onde\n  anda. À medida que seus olhos vão pouco a pouco se acostumando à quase\n  escuridão, você começa a ver movimentos à sua volta. Aranhas e\n  besouros sobem e descem pelas paredes entalhadas, desaparecendo em\n  frestas e gretas ao sentir sua aproximação; ratazanas e ratos correm\n  pelo chão à sua frente. Pingos de água caem em pequenas poças com um\n  sinistro som gotejante que ecoa pelo túnel. O ar é frio, úmido e\n  pesado. Depois de caminhar lentamente pelo túnel por uns cinco minutos,\n  você chega a uma mesa de pedra encostada contra a parede à sua\n  esquerda. Nela há seis caixas, uma das quais tem o seu nome pintado na\n  tampa.");
-  printf("\n\n ----------------------------------------------------------------------");
-  valor_HSE();
-  printf("                          ESCOLHA UMA OPÇÃO");
-  printf("\n                           1º Abrir a caixa");
-  printf("\n                 2º Continuar caminhando para o norte");
-  printf("\n\n ----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    escolha270();
-    break;
+    void escolha1() {
+    traducaoelimpeza();
+    printf("\n\n ----------------------------------------------------------------------\n\n");
+    printf("  O clamor dos espectadores excitados some gradualmente atrás de você,\n  que se aventura cada vez mais fundo na penumbra do túnel da caverna.");
+    printf("\n\n  Grandes cristais pendem do teto do túnel a intervalos de 20 metros,\n  irradiando uma luz suave, apenas suficiente para que se veja por onde\n  anda. À medida que seus olhos vão pouco a pouco se acostumando à quase\n  escuridão, você começa a ver movimentos à sua volta. Aranhas e\n  besouros sobem e descem pelas paredes entalhadas, desaparecendo em\n  frestas e gretas ao sentir sua aproximação; ratazanas e ratos correm\n  pelo chão à sua frente. Pingos de água caem em pequenas poças com um\n  sinistro som gotejante que ecoa pelo túnel. O ar é frio, úmido e\n  pesado. Depois de caminhar lentamente pelo túnel por uns cinco minutos,\n  você chega a uma mesa de pedra encostada contra a parede à sua\n  esquerda. Nela há seis caixas, uma das quais tem o seu nome pintado na\n  tampa.");
+    printf("\n\n ----------------------------------------------------------------------");
+    valor_HSE();
+    printf("                          ESCOLHA UMA OPÇÃO");
+    printf("\n                           1º Abrir a caixa");
+    printf("\n                 2º Continuar caminhando para o norte");
+    printf("\n\n ----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        escolha270();
+        break;
 
-  case 2:
-    escolha66();
-    break;
+    case 2:
+        escolha66();
+        break;
 
-  default:
-    escolha1();
-    break;
-  }
+    default:
+        escolha1();
+        break;
+    }
 
-}
+    }
 
-void escolha56() {
-  traducaoelimpeza();
-  printf("\n\n ----------------------------------------------------------------------\n\n");
-  printf("                 (Você continuou caminhando para o leste)\n\n");
-  printf("  Você vê que a obstrução é causada por um objeto grande e marrom,\n  parecendo um rochedo. Você o toca com a mão e fica surpreso ao\n  descobrir que é macio e esponjoso.");
-  printf("\n\n ----------------------------------------------------------------------\n");
-  valor_HSE();
-  printf("                          ESCOLHA UMA OPÇÃO");
-  printf("\n                      1º Tentar subir por cima dele");
-  printf("\n                    2º Cortá-lo ao meio com sua espada");
-  printf("\n ----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    escolha373();
-    break;
-  case 2:
-    escolha215();
-    break;
-  default:
-    escolha56();
-    break;
-  }
+    void escolha13() {
+    traducaoelimpeza();
+    printf("\n\n -----------------------------------------------------------------------\n\n");
+    printf("                  (Você continua seguindo para o oeste)\n\n");
+    printf("  O túnel faz uma curva abrupta para a esquerda e se dirige para o norte,\n  tanto quanto a sua vista alcança. As pegadas que você está seguindo\n  começam a sumir à medida que o túnel vai ficando mais seco. Logo não\n  vê mais o teto gotejante e as poças no chão. Você repara que o ar está\n  se tornando mais quente, e se vê ofegante, embora esteja andando bem\n  devagar. Em uma pequena reentrância da parede da esquerda, você vê um\n 4 pedaço de bambu na vertical. Levantando-o, repara que ele está cheio\n  de um líquido claro. Sua garganta está dolorosamente seca, e você se\n  sente um pouco tonto por causa do calor no túnel.");
+    printf("\n\n -----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("                          ESCOLHA UMA OPÇÃO");
+    printf("\n                             1º Beber o líquido");
+    printf("\n                 2º Não beber e continuar indo para leste");
+    printf("\n -----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        //escolha141();
+        break;
+    case 2:
+        //escolha182();
+        break;
 
-}
+    default:
+        escolha13();
+        break;
+    }
+    }
 
-void escolha66() {
-  traducaoelimpeza();
-  printf("\n\n ----------------------------------------------------------------------\n\n");
-  printf("                 (Você continuar caminhando para o norte)\n\n");
-  printf("  Depois de caminhar pelo túnel por alguns minutos, você chega a uma\n  encruzilhada. Uma seta branca pintada na parede aponta para o oeste.\n  No chão, você vê pegadas molhadas, feitas por aqueles que entraram\n  antes de você. É difícil ter certeza, mas parece que três deles\n  seguiram a direção da seta, enquanto um resolveu ir para o leste.");
-  printf("\n\n ----------------------------------------------------------------------\n");
-  valor_HSE();
-  printf("                          ESCOLHA UMA OPÇÃO");
-  printf("\n                          1º Ir para o oeste");
-  printf("\n                          2º Ir para o leste");
-  printf("\n ----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    escolha293();
-    break;
-  case 2:
-    escolha119();
-    break;
-  default:
-    escolha66;
-    break;
-  }
-}
+    void escolha56() {
+    traducaoelimpeza();
+    printf("\n\n ----------------------------------------------------------------------\n\n");
+    printf("                 (Você continuou caminhando para o leste)\n\n");
+    printf("  Você vê que a obstrução é causada por um objeto grande e marrom,\n  parecendo um rochedo. Você o toca com a mão e fica surpreso ao\n  descobrir que é macio e esponjoso.");
+    printf("\n\n ----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("                          ESCOLHA UMA OPÇÃO");
+    printf("\n                      1º Tentar subir por cima dele");
+    printf("\n                    2º Cortá-lo ao meio com sua espada");
+    printf("\n ----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        escolha373();
+        break;
+    case 2:
+        escolha215();
+        break;
+    default:
+        escolha56();
+        break;
+    }
 
-void escolha119() {
-  traducaoelimpeza();
-  printf("\n\n ----------------------------------------------------------------------\n\n");
-  printf("                          (Você foi para o leste)\n\n");
-  printf("  Adiante, você pode ver um grande obstáculo no chão do túnel, embora\n  esteja escuro demais para saber exatamente o que é. As pegadas\n  molhadas que você vem seguindo continuam até a obstrução.");
-  printf("\n\n ----------------------------------------------------------------------\n");
-  valor_HSE();
-  printf("                          ESCOLHA UMA OPÇÃO");
-  printf("\n                      1º Continuar indo para o leste");
-  printf("\n             2º Ir para a encruzilhada e seguir para o oeste");
-  printf("\n ----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    escolha56();
-    break;
-  case 2:
-    escolha293();
-    break;
-  default:
-    escolha119;
-    break;
-  }
+    }
 
-}
+    void escolha61(){
+    traducaoelimpeza();
+    printf("\n\n -----------------------------------------------------------------------\n\n");
+    printf("                    (Você gritou o mais alto possível)\n\n");
+    printf("  Apesar do terrível ruído de campainha nos seus ouvidos, você ouve\n  passos descendo pelo túnel. Seus gritos altos atraíram um guardião do\n  túnel. Há um HOBGOBLIN de pé junto a você. Ele sorri doentiamente\n  enquanto pressiona a ponta da espada contra seu pescoço. Você não tem\n  como se defender e impedir que ele o trespasse. Sua aventura termina\n  aqui.");
+    printf("\n\n -----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("  Digite qualquer número para continuar o jogo, depois pressione enter!");
+    printf("\n -----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        fimdejogo();
+        break;
 
-void escolha137() {
-  traducaoelimpeza();
-  printf("\n\n -----------------------------------------------------------------------\n\n");
-  printf("      (Você continuou indo para o oeste, seguindo dois pares de pegadas)\n\n");
-  printf("  Caminhando pelo túnel, você se surpreende com um grande sino de ferro pendurado no teto.");
-  printf("\n\n -----------------------------------------------------------------------\n");
-  valor_HSE();
-  printf("                          ESCOLHA UMA OPÇÃO");
-  printf("\n                             1º Tocar o sino");
-  printf("\n                 2º Contorná-lo e prosseguir para o oeste");
-  printf("\n -----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    escolha220();
-    break;
-  case 2:
-    escolha362();
-    break;
+    default:
+        fimdejogo();
+        break;
+    }
 
-  default:
-    escolha137();
-    break;
-  }
-}
+    }
 
-void escolha215() {
-  traducaoelimpeza();
-  printf("\n\n -----------------------------------------------------------------------\n\n");
-  printf("                           (Você cortou ao meio)\n\n");
-  printf("  Sua espada arrebenta facilmente a fina casca externa da gigantesca\n  bola de esporos. Uma espessa nuvem de esporos saída da bola se espalha\n  e o envolve. Alguns dos esporos grudam- se à sua pele, que começa a\n  coçar terrivelmente. Aparecem grandes caroços no seu rosto e braços, e\n  sua pele parece estar em fogo. Você perde 2 pontos de ENERGIA. Coçando\n  freneticamente os caroços, você passa por cima da bola de esporos,\n  agora murcha, e segue para o oeste.");
-  printf("\n\n -----------------------------------------------------------------------\n");
-  valor_HSE();
-  energia = energia - 2;
-  printf("\n                                   ATUALIZADO");
-  printf("\n              |--------------------------------------------|");
-  printf("\n                 Habilidade: %d | Energia: %d | Sorte: %d", habilidade, energia, sorte);
-  printf("\n              |--------------------------------------------|\n\n");
+    void escolha66() {
+    traducaoelimpeza();
+    printf("\n\n ----------------------------------------------------------------------\n\n");
+    printf("                 (Você continuar caminhando para o norte)\n\n");
+    printf("  Depois de caminhar pelo túnel por alguns minutos, você chega a uma\n  encruzilhada. Uma seta branca pintada na parede aponta para o oeste.\n  No chão, você vê pegadas molhadas, feitas por aqueles que entraram\n  antes de você. É difícil ter certeza, mas parece que três deles\n  seguiram a direção da seta, enquanto um resolveu ir para o leste.");
+    printf("\n\n ----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("                          ESCOLHA UMA OPÇÃO");
+    printf("\n                          1º Ir para o oeste");
+    printf("\n                          2º Ir para o leste");
+    printf("\n ----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        escolha293();
+        break;
+    case 2:
+        escolha119();
+        break;
+    default:
+        escolha66();
+        break;
+    }
+    }
 
-  printf("  Digite qualquer número para continuar o jogo, depois pressione enter!");
-  printf("\n -----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    //escolha13();
-    break;
+    void escolha119() {
+    traducaoelimpeza();
+    printf("\n\n ----------------------------------------------------------------------\n\n");
+    printf("                          (Você foi para o leste)\n\n");
+    printf("  Adiante, você pode ver um grande obstáculo no chão do túnel, embora\n  esteja escuro demais para saber exatamente o que é. As pegadas\n  molhadas que você vem seguindo continuam até a obstrução.");
+    printf("\n\n ----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("                          ESCOLHA UMA OPÇÃO");
+    printf("\n                      1º Continuar indo para o leste");
+    printf("\n             2º Ir para a encruzilhada e seguir para o oeste");
+    printf("\n ----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        escolha56();
+        break;
+    case 2:
+        escolha293();
+        break;
+    default:
+        escolha119;
+        break;
+    }
 
-  default:
-    //escolha13();
-    break;
-  }
-}
+    }
 
-void escolha220() {
-  traducaoelimpeza();
-  printf("\n\n -----------------------------------------------------------------------\n\n");
-  printf("                           (Você tocou o sino)\n\n");
-  printf("  Um "
-    "bong"
-    " sombrio soa como um toque de sino fúnebre. Tudo vibra à\n  sua volta, e você aperta os dentes quando sua cabeça também estremece.\n  Todo seu corpo está tremendo, e você cai. Você tirita e tem calafrios,\n  contorcendo-se convulsivamente no chão, à medida que as vibrações se\n  intensificam. Procura desesperadamente uma maneira de parar o sino.");
-  printf("\n\n -----------------------------------------------------------------------\n");
-  valor_HSE();
-  printf("                          ESCOLHA UMA OPÇÃO");
-  printf("\n                      1º Gritar o mais alto possível");
-  printf("\n                   2º Tentar abafa o sino com sua bota");
-  printf("\n -----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    //escolha61();
-    break;
-  case 2:
-    //escolha346();
-    break;
+    void escolha137() {
+    traducaoelimpeza();
+    printf("\n\n -----------------------------------------------------------------------\n\n");
+    printf("      (Você continuou indo para o oeste, seguindo dois pares de pegadas)\n\n");
+    printf("  Caminhando pelo túnel, você se surpreende com um grande sino de ferro pendurado no teto.");
+    printf("\n\n -----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("                          ESCOLHA UMA OPÇÃO");
+    printf("\n                             1º Tocar o sino");
+    printf("\n                 2º Contorná-lo e prosseguir para o oeste");
+    printf("\n -----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        escolha220();
+        break;
+    case 2:
+        escolha362();
+        break;
 
-  default:
-    escolha220();
-    break;
-  }
-}
+    default:
+        escolha137();
+        break;
+    }
+    }
 
-void escolha270() {
-  traducaoelimpeza();
-  printf("\n\n -----------------------------------------------------------------------\n\n");
-  printf("                           (Você abriu a caixa)\n\n");
-  printf("  A tampa da caixa sai facilmente. Dentro, você acha duas Peças de Ouro\n  e um bilhete, escrito num pequeno pedaço de pergaminho, endereçado a\n  você. Depois de colocar o ouro no bolso, você lê a mensagem: Muito bem.\n  Pelo menos você tem o bom senso de parar e tirar proveito da ajuda\n  simbólica que lhe é dada. Agora, posso avisá-lo da necessidade de\n  encontrar e usar diversos itens, se espera sair-se bem no meu\n  Calabouço da Morte. Assinado “Sukumvit.” Guardando de cor o aviso do\n  bilhete, você o rasga em pequenos pedaços e continua para o norte pelo\n  túnel.");
-  printf("\n\n -----------------------------------------------------------------------\n");
-  valor_HSE();
-  printf("  Digite qualquer número para continuar o jogo, depois pressione enter!");
-  printf("\n -----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    escolha66();
-    break;
+    void escolha215() {
+    traducaoelimpeza();
+    printf("\n\n -----------------------------------------------------------------------\n\n");
+    printf("                           (Você cortou ao meio)\n\n");
+    printf("  Sua espada arrebenta facilmente a fina casca externa da gigantesca\n  bola de esporos. Uma espessa nuvem de esporos saída da bola se espalha\n  e o envolve. Alguns dos esporos grudam- se à sua pele, que começa a\n  coçar terrivelmente. Aparecem grandes caroços no seu rosto e braços, e\n  sua pele parece estar em fogo. Você perde 2 pontos de ENERGIA. Coçando\n  freneticamente os caroços, você passa por cima da bola de esporos,\n  agora murcha, e segue para o oeste.");
+    printf("\n\n -----------------------------------------------------------------------\n");
+    valor_HSE();
+    energia = energia - 2;
+    printf("\n                                   ATUALIZADO");
+    printf("\n              |--------------------------------------------|");
+    printf("\n                 Habilidade: %d | Energia: %d | Sorte: %d", habilidade, energia, sorte);
+    printf("\n              |--------------------------------------------|\n\n");
 
-  default:
-    escolha66();
-    break;
-  }
-}
+    printf("  Digite qualquer número para continuar o jogo, depois pressione enter!");
+    printf("\n -----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        escolha13();
+        break;
 
-void escolha293() {
-  traducaoelimpeza();
-  printf("\n\n -----------------------------------------------------------------------\n\n");
-  printf("                      (Você chegou na encruzilhada)\n\n");
-  printf("  Seguindo os três pares de pegadas molhadas pela passagem oeste do\n  túnel, você logo chega a uma encruzilhada.");
-  printf("\n\n -----------------------------------------------------------------------\n");
-  valor_HSE();
-  printf("                          ESCOLHA UMA OPÇÃO");
-  printf("\n        1º Continuar para o oeste, seguindo dois pares de pegadas");
-  printf("\n      2º Se dirigir para o norte, seguindo o terceiro par de pegadas");
-  printf("\n -----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    escolha137();
-    break;
-  case 2:
-    //escolha387();
-    break;
+    default:
+        escolha13();
+        break;
+    }
+    }
 
-  default:
-    escolha293();
-    break;
-  }
+    void escolha220() {
+    traducaoelimpeza();
+    printf("\n\n -----------------------------------------------------------------------\n\n");
+    printf("                           (Você tocou o sino)\n\n");
+    printf("  Um "
+        "bong"
+        " sombrio soa como um toque de sino fúnebre. Tudo vibra à\n  sua volta, e você aperta os dentes quando sua cabeça também estremece.\n  Todo seu corpo está tremendo, e você cai. Você tirita e tem calafrios,\n  contorcendo-se convulsivamente no chão, à medida que as vibrações se\n  intensificam. Procura desesperadamente uma maneira de parar o sino.");
+    printf("\n\n -----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("                          ESCOLHA UMA OPÇÃO");
+    printf("\n                      1º Gritar o mais alto possível");
+    printf("\n                   2º Tentar abafa o sino com sua bota");
+    printf("\n -----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        escolha61();
+        break;
+    case 2:
+        //escolha346();
+        break;
 
-}
+    default:
+        escolha220();
+        break;
+    }
+    }
 
-void escolha362() {
-  traducaoelimpeza();
-  printf("\n\n -----------------------------------------------------------------------\n\n");
-  printf("                (Você continuou sua jornada para o oeste)\n\n");
-  printf("  O túnel dá uma guinada acentuada para a direita e continua para o\n  norte até onde a vista alcança. A distância, você ouve uma tremenda\n  comoção: grunhidos, rosnados, uivos. Você desembainha a espada e parte\n  na direção do tumulto.");
-  printf("\n\n -----------------------------------------------------------------------\n");
-  valor_HSE();
-  printf("  Digite qualquer número para continuar o jogo, depois pressione enter!");
-  printf("\n -----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    //escolha264();
-    break;
+    void escolha270() {
+    traducaoelimpeza();
+    printf("\n\n -----------------------------------------------------------------------\n\n");
+    printf("                           (Você abriu a caixa)\n\n");
+    printf("  A tampa da caixa sai facilmente. Dentro, você acha duas Peças de Ouro\n  e um bilhete, escrito num pequeno pedaço de pergaminho, endereçado a\n  você. Depois de colocar o ouro no bolso, você lê a mensagem: Muito bem.\n  Pelo menos você tem o bom senso de parar e tirar proveito da ajuda\n  simbólica que lhe é dada. Agora, posso avisá-lo da necessidade de\n  encontrar e usar diversos itens, se espera sair-se bem no meu\n  Calabouço da Morte. Assinado “Sukumvit.” Guardando de cor o aviso do\n  bilhete, você o rasga em pequenos pedaços e continua para o norte pelo\n  túnel.");
+    printf("\n\n -----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("  Digite qualquer número para continuar o jogo, depois pressione enter!");
+    printf("\n -----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        escolha66();
+        break;
 
-  default:
-    //escolha264();
-    break;
-  }
+    default:
+        escolha66();
+        break;
+    }
+    }
 
-}
+    void escolha293() {
+    traducaoelimpeza();
+    printf("\n\n -----------------------------------------------------------------------\n\n");
+    printf("                      (Você chegou na encruzilhada)\n\n");
+    printf("  Seguindo os três pares de pegadas molhadas pela passagem oeste do\n  túnel, você logo chega a uma encruzilhada.");
+    printf("\n\n -----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("                          ESCOLHA UMA OPÇÃO");
+    printf("\n        1º Continuar para o oeste, seguindo dois pares de pegadas");
+    printf("\n      2º Se dirigir para o norte, seguindo o terceiro par de pegadas");
+    printf("\n -----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        escolha137();
+        break;
+    case 2:
+        //escolha387();
+        break;
 
-void escolha373() {
-  traducaoelimpeza();
-  printf("\n\n -----------------------------------------------------------------------\n\n");
-  printf("                         (Você tentou subir sobre ele)\n\n");
-  printf("  Você sobe pelo rochedo macio, temendo ser absorvido por ele a qualquer\n  momento. É difícil passar por cima da coisa, pois seus membros afundam\n  na casca mole, mas, por fim, você consegue chegar ao outro lado.\n  Aliviado por estar de novo em terreno firme, você se dirige para o\n  leste.");
-  printf("\n\n -----------------------------------------------------------------------\n");
-  valor_HSE();
-  printf("  Digite qualquer número para continuar o jogo, depois pressione enter!");
-  printf("\n -----------------------------------------------------------------------\n\n");
-  scanf("%d", & escolha);
-  switch (escolha) {
-  case 1:
-    //escolha13();
-    break;
+    default:
+        escolha293();
+        break;
+    }
 
-  default:
-    //escolha13();
-    break;
-  }
-}
+    }
 
-//-------------------------FASES DO JOGO - ESCOLHAS - FIM
+    void escolha362() {
+    traducaoelimpeza();
+    printf("\n\n -----------------------------------------------------------------------\n\n");
+    printf("                (Você continuou sua jornada para o oeste)\n\n");
+    printf("  O túnel dá uma guinada acentuada para a direita e continua para o\n  norte até onde a vista alcança. A distância, você ouve uma tremenda\n  comoção: grunhidos, rosnados, uivos. Você desembainha a espada e parte\n  na direção do tumulto.");
+    printf("\n\n -----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("  Digite qualquer número para continuar o jogo, depois pressione enter!");
+    printf("\n -----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        //escolha264();
+        break;
 
-//-------------------------MAIN - COMEÇO
-void main() {
-  menu();
-}
-//-------------------------MAIN - FIM
+    default:
+        //escolha264();
+        break;
+    }
+
+    }
+
+    void escolha373() {
+    traducaoelimpeza();
+    printf("\n\n -----------------------------------------------------------------------\n\n");
+    printf("                         (Você tentou subir sobre ele)\n\n");
+    printf("  Você sobe pelo rochedo macio, temendo ser absorvido por ele a qualquer\n  momento. É difícil passar por cima da coisa, pois seus membros afundam\n  na casca mole, mas, por fim, você consegue chegar ao outro lado.\n  Aliviado por estar de novo em terreno firme, você se dirige para o\n  leste.");
+    printf("\n\n -----------------------------------------------------------------------\n");
+    valor_HSE();
+    printf("  Digite qualquer número para continuar o jogo, depois pressione enter!");
+    printf("\n -----------------------------------------------------------------------\n\n");
+    scanf("%d", & escolha);
+    switch (escolha) {
+    case 1:
+        //escolha13();
+        break;
+
+    default:
+        //escolha13();
+        break;
+    }
+    }
+
+    //-------------------------FASES DO JOGO - ESCOLHAS - FIM
+
+    //-------------------------MAIN - COMEÇO
+    void main() {
+    menu();
+    }
+    //-------------------------MAIN - FIM
