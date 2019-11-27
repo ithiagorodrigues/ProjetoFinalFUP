@@ -144,7 +144,7 @@ void historia() {
         switch (escolha) {
         case 1:
                 escolha1();
-                break;
+                break:
 
         default:
                 escolha1();
